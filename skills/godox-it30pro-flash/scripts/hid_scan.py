@@ -7,6 +7,17 @@ usage:  python hid_scan.py
         python hid_scan.py --dump
         python hid_scan.py --dump --vid 0x1234
 """
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026  iT30Pro S Patch Toolkit contributors
+#
+# This program is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option)
+# any later version.  It is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+# Public License (LICENSE) for more details.
+
 import ctypes
 import ctypes.wintypes as wt
 import sys
