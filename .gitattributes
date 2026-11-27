@@ -1,0 +1,13 @@
+# Normalise line endings: scripts and docs are LF in the repository,
+# checked out as-is on every platform (Python/C source, Markdown).
+* text=auto eol=lf
+
+*.py   text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.png  binary
+*.jpg  binary
+*.zip  binary
+*.bin  binary
