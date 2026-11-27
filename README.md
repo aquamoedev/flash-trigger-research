@@ -51,9 +51,7 @@
 ├── docs/
 │   └── power-model.md          功率编码、限幅点清单、补丁原理（英文技术文档）
 ├── patches/
-│   ├── patch_gr256.py          ← 当前功能：Gr A/B/C = 1/256，M = 1/128
-│   ├── patch_256_v2.py         历史方案：tenths/thirds 常量与滑条上限
-│   └── patch_256_v3.py         历史方案：v2 + 18 处 tenths 限幅
+│   └── patch_gr256.py          ← 当前功能：Gr A/B/C = 1/256，M = 1/128
 ├── skills/godox-it30pro-flash/
 │   ├── SKILL.md                刷写协议、安全规则、功率模型摘要
 │   └── scripts/
@@ -128,8 +126,8 @@ python patches/patch_gr256.py --no-verify                     # 跳过反汇编�
 文件 MD5  de49a9d3a406dc2087a17c61cdcc6280
 ```
 
-> `patches/` 下的 `patch_256_v2.py` / `patch_256_v3.py` 是早期方案，仅作留存：
-> 它们把**所有组**（含 M 组）的上限都放宽到 1/256，现已被 `patch_gr256.py` 取代。
+> 早期的 `patch_256_v2.py` / `patch_256_v3.py`（把所有组、含 M 组的上限一并放宽到
+> 1/256）已归档到 `tmp/archive/`，**不纳入版本管理**，仅在本地留档。
 
 ---
 

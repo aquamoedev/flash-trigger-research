@@ -64,9 +64,7 @@ you do so entirely at your own risk.**
 ├── docs/
 │   └── power-model.md          power encoding, clamp inventory, patch design
 ├── patches/
-│   ├── patch_gr256.py          ← the feature: Gr A/B/C = 1/256, M = 1/128
-│   ├── patch_256_v2.py         historical: tenths/thirds base constants
-│   └── patch_256_v3.py         historical: v2 + the 18 tenths clamps
+│   └── patch_gr256.py          ← the feature: Gr A/B/C = 1/256, M = 1/128
 ├── skills/
 │   └── godox-it30pro-flash/
 │       ├── SKILL.md            protocol, safety rules, power model summary
@@ -140,10 +138,9 @@ image MD5  36a1974b9bfadccb9869cdcb87925b64
 file  MD5  de49a9d3a406dc2087a17c61cdcc6280
 ```
 
-The historical scripts in the same folder (`patch_256_v2.py`,
-`patch_256_v3.py`) are kept for provenance and read/write the same
-`firmware/` folder. They widen the limits for *every* group (including M) and
-are superseded by `patch_gr256.py`.
+The earlier `patch_256_v2.py` / `patch_256_v3.py` — which widened the limit for
+*every* group, M included — are archived under `tmp/archive/` and are not tracked
+by git. They are superseded by `patch_gr256.py`.
 
 ---
 
